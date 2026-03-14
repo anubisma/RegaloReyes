@@ -16,6 +16,6 @@ Edit card.ino and change ssid AND password to your SSID and password to enable t
 
 Edit the files inside the PDF folder (and the references in index.html if change the names of the pdf files)
 
-Upload the root (data) to the ESP32 storage -> <code>Tools > ESP32 Sketch to data upload</code>
-
 Upload the code to your ESP32 using arduino
+
+Upload the root (data) to the ESP32 storage -> <code>Tools > ESP32 Sketch to data upload</code>
