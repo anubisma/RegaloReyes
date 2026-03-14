@@ -1,21 +1,17 @@
-# Simple web for ESP32 in html
+# Simple HTML web interface for ESP32
 
-A simple web interface to download PDF files stored in a ESP32 controller
+A simple web interface to download PDF files stored on an ESP32.
 
-this proyect just works on your local network
+This project only works on your local network.
 
-_Dependencies_
+**Dependencies**
 
-<code> ESP32 library for arduino </code>
+- ESP32 Arduino core
+- ESP32FS (Tools)
 
-<code> tool -> ESP32FS</code>
+**Usage**
 
-_Usage_
-
-Edit card.ino and change ssid AND password to your SSID and password to enable the ESP32 to connect to your LAN
-
-Edit the files inside the PDF folder (and the references in index.html if change the names of the pdf files)
-
-Upload the code to your ESP32 using arduino
-
-Upload the root (data) to the ESP32 storage -> <code>Tools > ESP32 Sketch to data upload</code>
+1. Open `card.ino` and set `ssid` and `password` to your Wi-Fi credentials so the ESP32 can connect to your LAN.
+2. Add or edit PDF files inside the `data/PDF` folder. If you rename files, update the references in `data/index.html`.
+3. Upload the sketch to your ESP32 from the Arduino IDE.
+4. Upload the `data` folder to the ESP32 filesystem using "Tools > ESP32 Sketch Data Upload".
